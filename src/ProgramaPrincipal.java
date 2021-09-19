@@ -5,7 +5,6 @@ public class ProgramaPrincipal {
         int qtdProduto;
         int tipoPagamento;
 
-
         //Objetos
         Mesa mesa1 = new Mesa();
         Mesa mesa2 = new Mesa();
@@ -14,7 +13,6 @@ public class ProgramaPrincipal {
         System.out.println(mesa1.imprimirMesa()+"\n");
 
         System.out.println(mesa2.imprimirMesa()+"\n");
-
 
         //Abrindo mesa1, efetuando pedidos e fechando conta
         mesa1.setNumeroMesa(1);
@@ -32,24 +30,16 @@ public class ProgramaPrincipal {
         mesa2.efetuaPedido(3,10);
         mesa2.fecharConta(2);
 
-
-
         System.out.println(mesa1.imprimirMesa());
         System.out.println(mesa1.divisaoConta()+"\n");
         System.out.println(mesa2.imprimirMesa());
         System.out.println(mesa2.divisaoConta()+"\n");
 
-        if (mesa1.getTotalConta() > mesa2.getTotalConta()){
-            System.out.println("Mesa 1 tem o maior valor gasto por pessoa:");
+        if (mesa1.getTotalConta() > mesa2.getTotalConta()) {
+            System.out.println("Mesa 1 tem o maior valor gasto por pessoa");
         }
-        else{
-            System.out.println("Mesa 2 tem o maior valor gasto por pessoa:");
+        else {
+            System.out.println("Mesa 2 tem o maior valor gasto por pessoa");
         }
-
-
-
-
-
-
     }
 }
